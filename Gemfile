@@ -46,6 +46,10 @@ gem 'pg'
 #rubocop
 gem 'rubocop', require: false
 
+#bootstrap-sprockets
+gem 'bootstrap-will_paginate',    '1.0.0'
+gem 'bootstrap-sass',             '3.4.1'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
