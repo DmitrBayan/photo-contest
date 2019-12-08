@@ -28,6 +28,7 @@ gem 'jbuilder', '~> 2.7'
 gem 'bootsnap', '>= 1.4.2', require: false
 
 #omniauth
+gem 'devise'
 gem 'omniauth-vkontakte'
 gem 'omniauth-facebook'
 
