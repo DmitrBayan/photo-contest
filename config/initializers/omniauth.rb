@@ -1,4 +1,6 @@
 Rails.application.config.middleware.use OmniAuth::Builder do
-  provider :vkontakte, ENV["VK_KEY"], ENV["VK_SECRET"]
-  provider :facebook, ENV["FB_KEY"], ENV["FB_SECRET"]
+  provider :vkontakte, Rails.application.credentials.aws[:VK_KEY], 
+  					   Rails.application.credentials.aws[:VK_SECRET]
+  provider :facebook, Rails.application.credentials.aws[:FB_KEY], 
+  					  Rails.application.credentials.aws[:FB_SECRET]
 end
