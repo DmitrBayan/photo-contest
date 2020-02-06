@@ -2,7 +2,6 @@
 
 class SessionController < ApplicationController
   def create
-    #@user = User.from_omniauth(request.env['omniauth.auth'])
     outcome = ::Users::Auth.run(auth_hash: request.env['omniauth.auth'].to_h)
     @user = outcome.valid? ? outcome.result : nil
     if @user.present?
@@ -10,7 +9,7 @@ class SessionController < ApplicationController
       flash[:success] = "Welcome, #{@user.first_name}!"
       redirect_to view_path
     else
-      flash[:warning] = 'Unknown error'
+      flash[:warning] = 'outcome errors...'
     end
   end
 

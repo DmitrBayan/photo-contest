@@ -1,6 +1,17 @@
-<ul>
-	<li>Name: <%= current_user.first_name %> </li>
-	<li>Surname: <%= current_user.last_name %> </li>
-	<li>Photo: <img src=<%= current_user.image_url %>/> </li>
-	<li>Link: <%= current_user.url %> </li>
-</ul>
+<% if logged? %>
+  <div class="row">
+    <aside class="col-md-4">
+      <section>
+        <h1>
+          <img src=<%= current_user.image_url %>/>
+          <%= current_user.first_name %>
+          <%= current_user.last_name %>
+          <h3><a href="<%= current_user.url %>">Social</a></h3>
+        </h1>
+      </section>
+    </aside>
+  </div>
+<% else %>
+  <h1>You must be logged in to explore this page</h1>
+  <%= link_to "Auth!", login_path, class: "btn btn-lg btn-primary" %>
+<% end %>
