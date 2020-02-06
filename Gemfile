@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
@@ -27,40 +29,40 @@ gem 'jbuilder', '~> 2.7'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.2', require: false
 
-#omniauth
-gem 'omniauth-vkontakte'
+# omniauth
 gem 'omniauth-facebook'
+gem 'omniauth-vkontakte'
 
-#carrierwave to upload photo
+# carrierwave to upload photo
 gem 'carrierwave', '~> 2.0'
 
-#pagination
+# pagination
 gem 'kaminari'
 
-#active interaction
+# active interaction
 gem 'active_interaction', '~> 3.7'
 
-#data base PostgreSQL
+# data base PostgreSQL
 gem 'pg'
 
-#rubocop
+# rubocop
 gem 'rubocop', require: false
 
-#bootstrap-sprockets
-gem 'bootstrap-will_paginate',    '1.0.0'
+# bootstrap-sprockets
 gem 'bootstrap-sass',             '3.4.1'
+gem 'bootstrap-will_paginate',    '1.0.0'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
-  gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+  gem 'byebug', platforms: %i[mri mingw x64_mingw]
   # Use sqlite3 as the database for Active Record
   gem 'sqlite3', '~> 1.4'
 end
 
 group :development do
   # Access an interactive console on exception pages or by calling 'console' anywhere in the code.
-  gem 'web-console', '>= 3.3.0'
   gem 'listen', '>= 3.0.5', '< 3.2'
+  gem 'web-console', '>= 3.3.0'
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
@@ -75,4 +77,4 @@ group :test do
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
-gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
