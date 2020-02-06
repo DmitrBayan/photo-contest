@@ -3,9 +3,10 @@
 class SessionController < ApplicationController
   def create
     #@user = User.from_omniauth(request.env['omniauth.auth'])
-    @user = Interactions::User::Auth.run(request.env['auth_hash'])
-    session[:user_id] = @user.id
-    if !@user.nil?
+    outcome = ::Users::Auth.run(auth_hash: request.env['omniauth.auth'].to_h)
+    @user = outcome.valid? ? outcome.result : nil
+    if @user.present?
+      session[:user_id] = @user.id
       flash[:success] = "Welcome, #{@user.first_name}!"
       redirect_to view_path
     else
