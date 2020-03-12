@@ -6,8 +6,9 @@ class UsersController < ApplicationController
   end
 
   def show
-    @user = User.find_by(params[:user_id])
+    @user = User.find_by( params[:user_id])
     (flash[:warning] = 'User not found') && redirect_to(root_path) if @user.nil?
+    @posts = @user.posts.paginate(page: params[:page])
   end
 
   def index

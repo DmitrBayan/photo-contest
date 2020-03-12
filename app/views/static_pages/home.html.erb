@@ -1,8 +1,17 @@
 <% provide(:title, "Home page") %>
 <h1> Welcome to home page of "PhotoContest"! </h1>
-<%if current_user.nil?%>
+<%if logged?%>
+  <div class="row">
+    <aside class="col-md-4">
+      <section class="user_info">
+        <%= render 'users/user', user: @user %>
+      </section>
+      <section class="post_form">
+        <%= render 'posts/post_form' %>
+      </section>
+    </aside>
+  </div>
+<% else %>
   <h2> We recommend you to auth:</h2>
   <%= link_to "Auth!", login_path, class: "btn btn-lg btn-primary" %>
-<% else %>
-  <h2>You successfully authorised yet!</h2>
 <% end %>

@@ -3,13 +3,13 @@
 class SessionController < ApplicationController
   def create
     outcome = ::Users::Auth.run(auth_hash: request.env['omniauth.auth'].to_h)
-    @user = outcome.valid? ? outcome.result : outcome.errors
-    if @user.present?
+    if outcome.valid?
+      @user = outcome.result
       session[:user_id] = @user.id
       flash[:success] = "Welcome, #{@user.first_name}!"
       redirect_to view_path
     else
-      flash[:warning] = user.errors.full_messages
+      flash[:warning] = outcome.errors.full_messages
     end
   end
 

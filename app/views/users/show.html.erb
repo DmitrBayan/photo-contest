@@ -9,5 +9,20 @@
           <h3><a href="<%= @user.url %>">Social</a></h3>
         </h1>
       </section>
+      <% if @user.id == current_user.id %>
+        <section class="post_form">
+          <%= render 'posts/post_form' %>
+        </section>
+      <% end %>
     </aside>
+    <div class="col-md-8">
+      <% if @user.posts.any? %>
+        <h3>Posts (<%= @user.posts.count %>)</h3>
+        <ol class="posts">
+          <%= render @posts %>
+        </ol>
+        <%= will_paginate @posts %>
+      <% end %>
+    </div>
+
   </div>

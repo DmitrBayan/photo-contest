@@ -9,4 +9,5 @@ Rails.application.routes.draw do
   get 'users' => 'users#index'
   get '/auth/:provider/callback' => 'session#create'
   resources :users
+  resources :posts, only: [:create, :destroy]
 end

@@ -13,10 +13,12 @@ module Users
         user.last_name = auth_hash['info']['last_name']
         user.image_url = auth_hash['info']['image']
         user.url = auth_hash['info']['urls']['Vkontakte']
+        user.access_token = auth_hash['credentials']['token']
       when 'facebook'
         user.first_name = auth_hash['info']['name'].split(' ')[0]
         user.last_name = auth_hash['info']['name'].split(' ')[1]
         user.image_url = auth_hash['info']['image']
+        user.access_token = auth_hash['credentials']['token']
       end
       user.save ? user : user.errors
     end
