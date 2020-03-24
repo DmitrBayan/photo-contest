@@ -7,7 +7,7 @@ class SessionController < ApplicationController
       @user = outcome.result
       session[:user_id] = @user.id
       flash[:success] = "Welcome, #{@user.first_name}!"
-      redirect_to view_path
+      redirect_to @user
     else
       flash[:warning] = outcome.errors.full_messages
     end

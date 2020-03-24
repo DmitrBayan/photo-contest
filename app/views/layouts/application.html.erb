@@ -14,7 +14,7 @@
   <body>
     <%= render 'layouts/header' %>
     <div class="container">
-      <%= render 'layouts/errors' %>
+      <%= render 'shared/errors' %>
       <%= yield %>
       <%= render 'layouts/footer' %>
       <%= debug(params) if Rails.env.development? %>

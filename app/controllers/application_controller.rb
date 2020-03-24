@@ -3,6 +3,11 @@
 class ApplicationController < ActionController::Base
   include ApplicationHelper
 
+  rescue_from ActiveRecord::RecordNotFound do
+    flash[:warning] = 'Record not found'
+    redirect_to(root_path)
+  end
+
   protect_from_forgery with: :exception
   helper_method :current_user
 

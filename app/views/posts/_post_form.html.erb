@@ -1,7 +1,0 @@
-<%= form_with model: @post do |f| %>
-  <%= render 'layouts/errors' %>
-  <div class="field">
-  <%= f.text_area :content, placeholder: "New post..." %>
-  <%= f.submit "Create", class: "btn btn-primary" %>
-  </div>
-<% end %>
