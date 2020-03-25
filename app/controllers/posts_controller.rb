@@ -8,7 +8,7 @@ class PostsController < ApplicationController
     @post = current_user.posts.build(post_params)
     if @post.save
       flash[:success] = 'Post created!'
-      redirect_to user_path
+      redirect_to current_user
     else
       redirect_to root_path
       flash[:warning] = 'Something went wrong...'
@@ -18,13 +18,14 @@ class PostsController < ApplicationController
   def destroy
     @post.destroy
     flash[:success] = 'Post deleted'
-    redirect_to root_path
+    redirect_to current_user
+
   end
 
   private
 
   def post_params
-    params.require(:post).permit(:content)
+    params.require(:post).permit(:content, :photo)
   end
 
   def correct_user
