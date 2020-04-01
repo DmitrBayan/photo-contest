@@ -10,5 +10,6 @@
       <%= link_to "delete", post, method: :delete,
                   data: { confirm: "You sure?" } %>
     <% end %>
+    <%= render 'comments/comment_form' %>
   </span>
 </li>

@@ -7,5 +7,7 @@ Rails.application.routes.draw do
   get 'view' => 'users#show'
   get '/auth/:provider/callback' => 'session#create'
   resources :users
-  resources :posts, only: [:create, :destroy]
+  resources :posts, only: %i[create destroy] do
+    resources :comments
+  end
 end

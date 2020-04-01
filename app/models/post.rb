@@ -27,6 +27,7 @@ class Post < ApplicationRecord
   validates :user_id, presence: true
   validates :content, presence: true
   validate :photo_size
+  has_many :comments, dependent: :destroy
 
   private
   def photo_size
