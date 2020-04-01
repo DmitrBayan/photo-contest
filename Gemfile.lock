@@ -60,6 +60,9 @@ GEM
       zeitwerk (~> 2.2)
     addressable (2.7.0)
       public_suffix (>= 2.0.2, < 5.0)
+    annotate (3.1.1)
+      activerecord (>= 3.2, < 7.0)
+      rake (>= 10.4, < 14.0)
     ast (2.4.0)
     autoprefixer-rails (9.7.3)
       execjs
@@ -278,6 +281,7 @@ PLATFORMS
 
 DEPENDENCIES
   active_interaction (~> 3.7)
+  annotate
   bootsnap (>= 1.4.2)
   bootstrap-sass (= 3.4.1)
   bootstrap-will_paginate (= 1.0.0)

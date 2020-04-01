@@ -15,8 +15,7 @@ module Users
         user.url = auth_hash['info']['urls']['Vkontakte']
         user.access_token = auth_hash['credentials']['token']
       when 'facebook'
-        user.first_name = auth_hash['info']['name'].split(' ')[0]
-        user.last_name = auth_hash['info']['name'].split(' ')[1]
+        user.first_name, user.last_name = auth_hash['info']['name'].split(' ')
         user.image_url = auth_hash['info']['image']
         user.access_token = auth_hash['credentials']['token']
       end

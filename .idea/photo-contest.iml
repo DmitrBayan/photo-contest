@@ -33,6 +33,7 @@
     <orderEntry type="library" scope="PROVIDED" name="activestorage (v6.0.1, RVM: ruby-2.5.1 [photo-contest]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="activesupport (v6.0.1, RVM: ruby-2.5.1 [photo-contest]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="addressable (v2.7.0, RVM: ruby-2.5.1 [photo-contest]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="annotate (v3.1.1, RVM: ruby-2.5.1 [photo-contest]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="ast (v2.4.0, RVM: ruby-2.5.1 [photo-contest]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="autoprefixer-rails (v9.7.3, RVM: ruby-2.5.1 [photo-contest]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="bindex (v0.8.1, RVM: ruby-2.5.1 [photo-contest]) [gem]" level="application" />

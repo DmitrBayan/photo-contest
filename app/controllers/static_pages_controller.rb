@@ -1,6 +1,8 @@
+# frozen_string_literal: true
+
 class StaticPagesController < ApplicationController
   def home
     @user = current_user
-    @micropost = current_user.posts.build if logged?
+    @post = current_user.posts.build if logged?
   end
 end

@@ -37,3 +37,7 @@ yarn-debug.log*
 /config/credentials/development.key
 
 /config/credentials/production.key
+
+/public/uploads
+/db/development.sqlite3
+/db/test.*
