@@ -3,11 +3,11 @@
 module ApplicationHelper
   def full_title(title = '')
     full_title = 'PhotoContest'
-    full_title = "#{title} * #{full_title} * " unless title.nil?
+    full_title = "#{title} * #{full_title} * " unless title.blank?
   end
 
   def logged?
-    !current_user.blank?
+    current_user.present?
   end
 
   def current_user?(user)

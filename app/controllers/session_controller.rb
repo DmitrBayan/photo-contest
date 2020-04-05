@@ -9,6 +9,7 @@ class SessionController < ApplicationController
       flash[:success] = "Welcome, #{@user.first_name}!"
       redirect_to @user
     else
+      redirect_to root_path
       flash[:warning] = outcome.errors.full_messages
     end
   end

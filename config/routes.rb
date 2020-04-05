@@ -2,7 +2,6 @@
 
 Rails.application.routes.draw do
   root 'static_pages#home'
-  get 'login' => 'users#new'
   delete 'logout' => 'session#destroy'
   get 'view' => 'users#show'
   get '/auth/:provider/callback' => 'session#create'
