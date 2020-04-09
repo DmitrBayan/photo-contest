@@ -15,7 +15,7 @@ module ApplicationHelper
   end
 
   def must_logged
-    redirect_to login_path
+    redirect_to root_path
     flash[:warning] = 'You must be logged in!'
   end
 end
