@@ -29,7 +29,6 @@ class Post < ApplicationRecord
   validate :photo_size
   has_many :comments, dependent: :destroy
 
-  private
   def photo_size
     if photo.size >= 5.megabytes
       errors.add(:photo, 'should be less than 5MB')

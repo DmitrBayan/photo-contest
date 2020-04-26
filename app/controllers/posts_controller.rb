@@ -11,7 +11,7 @@ class PostsController < ApplicationController
       redirect_to current_user
     else
       redirect_to root_path
-      flash[:warning] = 'Something went wrong...'
+      flash[:warning] = @post.errors.full_messages.to_sentence
     end
   end
 

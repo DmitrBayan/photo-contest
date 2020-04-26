@@ -62,6 +62,15 @@ p {
   line-height: 1.7em;
 }
 
+h4 {
+  font-size: 2em;
+  letter-spacing: -1px;
+  margin-bottom: 30px;
+  text-align: center;
+  font-weight: normal;
+  color: darkgrey;
+}
+
 /* header */
 
 #logo {
@@ -129,7 +138,7 @@ footer {
     }
   }
   .timestamp {
-    color: $gray-light;
+    color: $light-grey;
     display: block;
     margin-left: 60px;
   }
