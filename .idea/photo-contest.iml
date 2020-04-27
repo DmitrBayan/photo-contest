@@ -74,6 +74,7 @@
     <orderEntry type="library" scope="PROVIDED" name="mini_portile2 (v2.4.0, RVM: ruby-2.5.1 [photo-contest]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="minitest (v5.13.0, RVM: ruby-2.5.1 [photo-contest]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="msgpack (v1.3.1, RVM: ruby-2.5.1 [photo-contest]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="msgpack_rails (v0.4.3, RVM: ruby-2.5.1 [photo-contest]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="multi_json (v1.14.1, RVM: ruby-2.5.1 [photo-contest]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="multi_xml (v0.6.0, RVM: ruby-2.5.1 [photo-contest]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="multipart-post (v2.1.1, RVM: ruby-2.5.1 [photo-contest]) [gem]" level="application" />
