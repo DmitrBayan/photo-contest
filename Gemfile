@@ -40,7 +40,7 @@ gem 'carrierwave', '~> 2.0'
 gem 'kaminari'
 
 #for heroku
-gem 'msgpack-rails', '>=1.3.1'
+gem 'msgpack'
 # active interaction
 gem 'active_interaction', '~> 3.7'
 
