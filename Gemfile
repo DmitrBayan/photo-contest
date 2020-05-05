@@ -44,6 +44,7 @@ gem 'msgpack', '1.3.1'
 # active interaction
 gem 'active_interaction', '~> 3.7'
 
+gem 'pg'
 
 # rubocop
 gem 'rubocop', require: false
@@ -77,9 +78,7 @@ group :test do
   gem 'webdrivers'
 end
 
-group :production do
-  # data base PostgreSQL
-  gem 'pg'
+group :production do 
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
