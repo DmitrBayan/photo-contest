@@ -4,7 +4,7 @@
 #
 # Table name: posts
 #
-#  id         :integer          not null, primary key
+#  id         :bigint           not null, primary key
 #  content    :string
 #  photo      :string
 #  created_at :datetime         not null
@@ -18,7 +18,7 @@
 #
 # Foreign Keys
 #
-#  user_id  (user_id => users.id)
+#  fk_rails_...  (user_id => users.id)
 #
 class Post < ApplicationRecord
   belongs_to :user
