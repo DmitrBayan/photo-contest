@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 class PostsController < ApplicationController
-  before_action :logged?, only: %i[create destroy], except: [:must_logged]
+  before_action :logged?, only: %i[create destroy]
   before_action :correct_user, only: :destroy
 
   def create
@@ -30,6 +30,5 @@ class PostsController < ApplicationController
   def correct_user
     @post = current_user.posts.find(params[:id])
     redirect_to root_path if @post.nil?
-    flash[:warning] = 'It is not your post'
   end
 end
