@@ -5,17 +5,14 @@ default: &default
 
 development:
   <<: *default
-  database: PhotoContest_development
+  database: photo_contest_development
 
-# Warning: The database defined as "test" will be erased and
-# re-generated from your development database when you run "rake".
-# Do not set this db to the same as development or production.
 test:
   <<: *default
-  database: PhotoContest_test
+  database: photo_contest_test
 
 production:
   <<: *default
-  database: PhotoContest_production
-  username: PhotoContest
+  database: photo_contest_production
+  username: photo_contest
   password: <%= ENV['PHOTO_CONTEST_DATABASE_PASSWORD'] %>
