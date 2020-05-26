@@ -100,7 +100,7 @@ GEM
     faraday (1.0.1)
       multipart-post (>= 1.2, < 3)
     ffi (1.12.2)
-    fog-aws (3.6.4)
+    fog-aws (3.6.5)
       fog-core (~> 2.1)
       fog-json (~> 1.1)
       fog-xml (~> 0.1)
@@ -311,7 +311,7 @@ DEPENDENCIES
   byebug
   capybara (>= 2.15)
   carrierwave (~> 2.0)
-  fog-aws
+  fog-aws (= 3.6.5)
   fog-core
   jbuilder (~> 2.7)
   kaminari

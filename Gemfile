@@ -45,7 +45,7 @@ gem 'msgpack', '1.3.1'
 gem 'active_interaction', '~> 3.7'
 
 gem 'pg'
-gem 'fog-aws'
+gem 'fog-aws', '3.6.5'
 gem 'fog-core'
 
 # rubocop
