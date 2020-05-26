@@ -46,6 +46,7 @@ gem 'active_interaction', '~> 3.7'
 
 gem 'pg'
 gem 'fog-aws'
+gem 'fog-core'
 
 # rubocop
 gem 'rubocop', require: false
