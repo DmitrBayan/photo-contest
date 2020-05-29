@@ -26,6 +26,7 @@ class Post < ApplicationRecord
   mount_uploader :photo, PhotoUploader
   validates :user_id, presence: true
   validates :content, presence: true
+  validates :photo, presence: true
   validate :photo_size
   has_many :comments, dependent: :destroy
 

@@ -8,10 +8,20 @@ class CommentsController < ApplicationController
     @post = Post.find(params[:post_id])
     @comment = @post.comments.create(comment_params)
     @comment.user_id = current_user.id
-    @comment.save
-    redirect_to root_path
+    if @comment.save
+      flash[:success] = 'Commented!'
+      redirect_to request.referrer
+    else
+      redirect_to request.referrer || root_path
+      flash[:warning] = @comment.errors.full_messages.to_sentence
+    end
   end
 
+  def destroy
+    @comment.destroy
+    flash[:success] = 'Comment deleted'
+    redirect_to request.referrer || current_user
+  end
 
   private
 

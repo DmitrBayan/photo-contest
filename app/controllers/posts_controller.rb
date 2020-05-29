@@ -10,7 +10,7 @@ class PostsController < ApplicationController
       flash[:success] = 'Post created!'
       redirect_to current_user
     else
-      redirect_to root_path
+      redirect_to request.referrer || root_path
       flash[:warning] = @post.errors.full_messages.to_sentence
     end
   end

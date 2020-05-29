@@ -1,0 +1,12 @@
+<%= comments.each do |comment| %>
+  <li id="comment-<%= comment.id %>">
+    <span class="user"><%= link_to comment.user.first_name,
+                                   comment.user %></span>
+    <span class="content">
+      <%= comment.body %>
+    </span>
+    <span class="timestamp">
+      Commented <%= time_ago_in_words(comment.created_at) %> ago.
+    </span>
+  </li>
+<% end %>
