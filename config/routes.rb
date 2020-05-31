@@ -5,8 +5,11 @@ Rails.application.routes.draw do
   delete 'logout' => 'session#destroy'
   get '/auth/:provider/callback' => 'session#create'
   resources :users
-  resources :posts, only: %i[create destroy] do
+  resources :posts do
     resources :comments
+  end
+  resource :comments do
+    resource :comments
   end
 
   match '*path' => 'errors#error_404', via: :all

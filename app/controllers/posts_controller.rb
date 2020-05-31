@@ -4,6 +4,14 @@ class PostsController < ApplicationController
   before_action :logged?, only: %i[create destroy]
   before_action :correct_user, only: :destroy
 
+  def index
+    @posts = Post.all
+  end
+
+  def show
+    @post = Post.find(params[:post_id])
+  end
+
   def create
     @post = current_user.posts.build(post_params)
     if @post.save
@@ -24,7 +32,7 @@ class PostsController < ApplicationController
   private
 
   def post_params
-    params.require(:post).permit(:content, :photo)
+    params.require(:post).permit(:title, :photo)
   end
 
   def correct_user

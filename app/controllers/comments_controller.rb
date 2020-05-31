@@ -3,10 +3,14 @@
 class CommentsController < ApplicationController
   before_action :logged?, only: %i[create destroy]
   before_action :correct_user, only: :destroy
+  before_action :find_commentable, only: :create
+
+  def new
+    @comment = Comment.new
+  end
 
   def create
-    @post = Post.find(params[:post_id])
-    @comment = @post.comments.create(comment_params)
+    @comment = @commentable.comments.build(comment_params)
     @comment.user_id = current_user.id
     if @comment.save
       flash[:success] = 'Commented!'
@@ -32,6 +36,11 @@ class CommentsController < ApplicationController
   end
 
   def comment_params
-    params.require(:comment).permit(:body, :user_id)
+    params.require(:comment).permit(:body)
+  end
+
+  def find_commentable
+    @commentable = Comment.find(params[:comment_id]) if params[:comment_id]
+    @commentable = Post.find(params[:post_id]) if params[:post_id]
   end
 end

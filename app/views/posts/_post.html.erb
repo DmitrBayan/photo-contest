@@ -1,7 +1,7 @@
 <li id="post-<%= post.id %>">
   <span class="user"><%= link_to post.user.first_name, post.user %></span>
   <span class="content">
-    <%= post.content %>
+    <%= post.title %>
     <%= image_tag(post.photo.url, alt: 'Image') if post.photo?%>
   </span>
   <span class="timestamp">
@@ -11,6 +11,6 @@
                   data: { confirm: "You sure?" } %>
     <% end %>
     <%= render 'shared/comment_form', post: post %>
-    <%= render 'comments/comment', post: post, comments: post.comments %>
+    <%= render(partial: 'comments/comment', collection: post.comments) %>
   </span>
 </li>

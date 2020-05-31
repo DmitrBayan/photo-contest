@@ -2,27 +2,34 @@
 #
 # Table name: comments
 #
-#  id         :bigint           not null, primary key
-#  body       :text
-#  created_at :datetime         not null
-#  updated_at :datetime         not null
-#  post_id    :integer          not null
-#  user_id    :integer          not null
+#  id               :bigint           not null, primary key
+#  body             :text
+#  commentable_type :string
+#  created_at       :datetime         not null
+#  updated_at       :datetime         not null
+#  comment_id       :bigint
+#  commentable_id   :integer
+#  post_id          :bigint           not null
+#  user_id          :bigint           not null
 #
 # Indexes
 #
-#  index_comments_on_post_id  (post_id)
-#  index_comments_on_user_id  (user_id)
+#  index_comments_on_comment_id  (comment_id)
+#  index_comments_on_post_id     (post_id)
+#  index_comments_on_user_id     (user_id)
 #
 # Foreign Keys
 #
+#  fk_rails_...  (comment_id => comments.id)
 #  fk_rails_...  (post_id => posts.id)
 #  fk_rails_...  (user_id => users.id)
 #
 class Comment < ApplicationRecord
   belongs_to :post
   belongs_to :user
+  belongs_to :commentable, polymorphic: true
   validates :body, presence: true
   validates :user_id, presence: true
-  has_many :comments, dependent: :destroy
+  has_many :comments, as: :commentable, dependent: :destroy
+
 end

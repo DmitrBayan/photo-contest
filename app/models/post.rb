@@ -5,11 +5,11 @@
 # Table name: posts
 #
 #  id         :bigint           not null, primary key
-#  content    :string
 #  photo      :string
+#  title      :text
 #  created_at :datetime         not null
 #  updated_at :datetime         not null
-#  user_id    :integer          not null
+#  user_id    :bigint           not null
 #
 # Indexes
 #
@@ -25,10 +25,10 @@ class Post < ApplicationRecord
   default_scope -> { order(created_at: :desc) }
   mount_uploader :photo, PhotoUploader
   validates :user_id, presence: true
-  validates :content, presence: true
+  validates :title, presence: true
   validates :photo, presence: true
   validate :photo_size
-  has_many :comments, dependent: :destroy
+  has_many :comments, as: :commentable, dependent: :destroy
 
   def photo_size
     if photo.size >= 5.megabytes
