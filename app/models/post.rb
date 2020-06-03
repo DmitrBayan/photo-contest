@@ -29,6 +29,7 @@ class Post < ApplicationRecord
   validates :photo, presence: true
   validate :photo_size
   has_many :comments, as: :commentable, dependent: :destroy
+  has_many :likes, dependent: :destroy
 
   def photo_size
     if photo.size >= 5.megabytes

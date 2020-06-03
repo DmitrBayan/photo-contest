@@ -4,6 +4,7 @@
     <%= post.title %>
     <%= image_tag(post.photo.url, alt: 'Image') if post.photo?%>
   </span>
+  <%= render 'shared/likes', post: post %>
   <% if current_user?(post.user) %>
       <div class="dropdown">
         <button class="dropbtn">More</button>
