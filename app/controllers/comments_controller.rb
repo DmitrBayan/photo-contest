@@ -12,6 +12,7 @@ class CommentsController < ApplicationController
   def create
     @comment = @commentable.comments.build(comment_params)
     @comment.user_id = current_user.id
+    byebug
     if @comment.save
       flash[:success] = 'Commented!'
       redirect_to request.referrer
@@ -40,7 +41,8 @@ class CommentsController < ApplicationController
   end
 
   def find_commentable
-    @commentable = Comment.find(params[:comment_id]) if params[:comment_id]
+    @commentable = Comment.find(params[:format]) if params[:format]
     @commentable = Post.find(params[:post_id]) if params[:post_id]
+    byebug
   end
 end

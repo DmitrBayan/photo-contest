@@ -4,13 +4,25 @@
     <%= post.title %>
     <%= image_tag(post.photo.url, alt: 'Image') if post.photo?%>
   </span>
-  <span class="timestamp">
+  <% if current_user?(post.user) %>
+      <div class="dropdown">
+        <button class="dropbtn">More</button>
+        <div class="dropdown-content">
+          <div class="delete_post">
+            <%= link_to "Delete photo", post, method: :delete,
+                                        data: { confirm: "You sure?" } %>
+          </div>
+          <div class="edit_post">
+            <%= link_to "Edit photo", post, method: :edit %>
+          </div>
+        </div>
+      </div>
+  <% end %>
+  <div class="timestamp">
     Posted <%= time_ago_in_words(post.created_at) %> ago.
-    <% if current_user?(post.user) %>
-      <%= link_to "delete", post, method: :delete,
-                  data: { confirm: "You sure?" } %>
-    <% end %>
+  </div>
+    <ul>
     <%= render 'shared/comment_form', post: post %>
     <%= render(partial: 'comments/comment', collection: post.comments) %>
-  </span>
+    </ul>
 </li>

@@ -20,18 +20,18 @@
     </content>
     <orderEntry type="jdk" jdkName="RVM: ruby-2.5.1 [photo-contest]" jdkType="RUBY_SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" scope="PROVIDED" name="actioncable (v6.0.2.2, RVM: ruby-2.5.1 [photo-contest]) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="actionmailbox (v6.0.2.2, RVM: ruby-2.5.1 [photo-contest]) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="actionmailer (v6.0.2.2, RVM: ruby-2.5.1 [photo-contest]) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="actionpack (v6.0.2.2, RVM: ruby-2.5.1 [photo-contest]) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="actiontext (v6.0.2.2, RVM: ruby-2.5.1 [photo-contest]) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="actionview (v6.0.2.2, RVM: ruby-2.5.1 [photo-contest]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="actioncable (v6.0.3.1, RVM: ruby-2.5.1 [photo-contest]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="actionmailbox (v6.0.3.1, RVM: ruby-2.5.1 [photo-contest]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="actionmailer (v6.0.3.1, RVM: ruby-2.5.1 [photo-contest]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="actionpack (v6.0.3.1, RVM: ruby-2.5.1 [photo-contest]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="actiontext (v6.0.3.1, RVM: ruby-2.5.1 [photo-contest]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="actionview (v6.0.3.1, RVM: ruby-2.5.1 [photo-contest]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="active_interaction (v3.8.2, RVM: ruby-2.5.1 [photo-contest]) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="activejob (v6.0.2.2, RVM: ruby-2.5.1 [photo-contest]) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="activemodel (v6.0.2.2, RVM: ruby-2.5.1 [photo-contest]) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="activerecord (v6.0.2.2, RVM: ruby-2.5.1 [photo-contest]) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="activestorage (v6.0.2.2, RVM: ruby-2.5.1 [photo-contest]) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="activesupport (v6.0.2.2, RVM: ruby-2.5.1 [photo-contest]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="activejob (v6.0.3.1, RVM: ruby-2.5.1 [photo-contest]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="activemodel (v6.0.3.1, RVM: ruby-2.5.1 [photo-contest]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="activerecord (v6.0.3.1, RVM: ruby-2.5.1 [photo-contest]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="activestorage (v6.0.3.1, RVM: ruby-2.5.1 [photo-contest]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="activesupport (v6.0.3.1, RVM: ruby-2.5.1 [photo-contest]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="addressable (v2.7.0, RVM: ruby-2.5.1 [photo-contest]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="annotate (v3.1.1, RVM: ruby-2.5.1 [photo-contest]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="ast (v2.4.0, RVM: ruby-2.5.1 [photo-contest]) [gem]" level="application" />
@@ -52,7 +52,7 @@
     <orderEntry type="library" scope="PROVIDED" name="excon (v0.73.0, RVM: ruby-2.5.1 [photo-contest]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="execjs (v2.7.0, RVM: ruby-2.5.1 [photo-contest]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="faraday (v1.0.1, RVM: ruby-2.5.1 [photo-contest]) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="ffi (v1.12.2, RVM: ruby-2.5.1 [photo-contest]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="ffi (v1.13.0, RVM: ruby-2.5.1 [photo-contest]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="fog-aws (v3.6.5, RVM: ruby-2.5.1 [photo-contest]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="fog-core (v2.1.0, RVM: ruby-2.5.1 [photo-contest]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="fog-json (v1.2.0, RVM: ruby-2.5.1 [photo-contest]) [gem]" level="application" />
@@ -61,15 +61,14 @@
     <orderEntry type="library" scope="PROVIDED" name="globalid (v0.4.2, RVM: ruby-2.5.1 [photo-contest]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="hashie (v4.1.0, RVM: ruby-2.5.1 [photo-contest]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="i18n (v1.8.2, RVM: ruby-2.5.1 [photo-contest]) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="image_processing (v1.10.3, RVM: ruby-2.5.1 [photo-contest]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="image_processing (v1.11.0, RVM: ruby-2.5.1 [photo-contest]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="ipaddress (v0.8.3, RVM: ruby-2.5.1 [photo-contest]) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="jaro_winkler (v1.5.4, RVM: ruby-2.5.1 [photo-contest]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="jbuilder (v2.10.0, RVM: ruby-2.5.1 [photo-contest]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="jwt (v2.2.1, RVM: ruby-2.5.1 [photo-contest]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="kaminari (v1.2.0, RVM: ruby-2.5.1 [photo-contest]) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="kaminari-actionview (v1.2.0, RVM: ruby-2.5.1 [photo-contest]) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="kaminari-activerecord (v1.2.0, RVM: ruby-2.5.1 [photo-contest]) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="kaminari-core (v1.2.0, RVM: ruby-2.5.1 [photo-contest]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="kaminari-actionview (v1.2.1, RVM: ruby-2.5.1 [photo-contest]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="kaminari-activerecord (v1.2.1, RVM: ruby-2.5.1 [photo-contest]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="kaminari-core (v1.2.1, RVM: ruby-2.5.1 [photo-contest]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="listen (v3.1.5, RVM: ruby-2.5.1 [photo-contest]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="loofah (v2.5.0, RVM: ruby-2.5.1 [photo-contest]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="mail (v2.7.1, RVM: ruby-2.5.1 [photo-contest]) [gem]" level="application" />
@@ -81,7 +80,7 @@
     <orderEntry type="library" scope="PROVIDED" name="mini_magick (v4.10.1, RVM: ruby-2.5.1 [photo-contest]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="mini_mime (v1.0.2, RVM: ruby-2.5.1 [photo-contest]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="mini_portile2 (v2.4.0, RVM: ruby-2.5.1 [photo-contest]) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="minitest (v5.14.0, RVM: ruby-2.5.1 [photo-contest]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="minitest (v5.14.1, RVM: ruby-2.5.1 [photo-contest]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="msgpack (v1.3.1, RVM: ruby-2.5.1 [photo-contest]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="multi_json (v1.14.1, RVM: ruby-2.5.1 [photo-contest]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="multi_xml (v0.6.0, RVM: ruby-2.5.1 [photo-contest]) [gem]" level="application" />
@@ -94,9 +93,9 @@
     <orderEntry type="library" scope="PROVIDED" name="omniauth-oauth2 (v1.6.0, RVM: ruby-2.5.1 [photo-contest]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="omniauth-vkontakte (v1.5.1, RVM: ruby-2.5.1 [photo-contest]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="parallel (v1.19.1, RVM: ruby-2.5.1 [photo-contest]) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="parser (v2.7.1.2, RVM: ruby-2.5.1 [photo-contest]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="parser (v2.7.1.3, RVM: ruby-2.5.1 [photo-contest]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="pg (v1.2.3, RVM: ruby-2.5.1 [photo-contest]) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="public_suffix (v4.0.4, RVM: ruby-2.5.1 [photo-contest]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="public_suffix (v4.0.5, RVM: ruby-2.5.1 [photo-contest]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="puma (v3.12.4, RVM: ruby-2.5.1 [photo-contest]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rack (v2.2.2, RVM: ruby-2.5.1 [photo-contest]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rack-proxy (v0.6.5, RVM: ruby-2.5.1 [photo-contest]) [gem]" level="application" />
@@ -112,6 +111,7 @@
     <orderEntry type="library" scope="PROVIDED" name="regexp_parser (v1.7.0, RVM: ruby-2.5.1 [photo-contest]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rexml (v3.2.4, RVM: ruby-2.5.1 [photo-contest]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rubocop (v0.82.0, RVM: ruby-2.5.1 [photo-contest]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rubocop-ast (v0.0.3, RVM: ruby-2.5.1 [photo-contest]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="ruby-progressbar (v1.10.1, RVM: ruby-2.5.1 [photo-contest]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="ruby-vips (v2.0.17, RVM: ruby-2.5.1 [photo-contest]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="ruby_dep (v1.5.0, RVM: ruby-2.5.1 [photo-contest]) [gem]" level="application" />
@@ -119,7 +119,7 @@
     <orderEntry type="library" scope="PROVIDED" name="sass (v3.7.4, RVM: ruby-2.5.1 [photo-contest]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="sass-listen (v4.0.0, RVM: ruby-2.5.1 [photo-contest]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="sass-rails (v5.1.0, RVM: ruby-2.5.1 [photo-contest]) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="sassc (v2.3.0, RVM: ruby-2.5.1 [photo-contest]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="sassc (v2.4.0, RVM: ruby-2.5.1 [photo-contest]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="selenium-webdriver (v3.142.7, RVM: ruby-2.5.1 [photo-contest]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="spring (v2.1.0, RVM: ruby-2.5.1 [photo-contest]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="spring-watcher-listen (v2.0.1, RVM: ruby-2.5.1 [photo-contest]) [gem]" level="application" />
@@ -135,8 +135,8 @@
     <orderEntry type="library" scope="PROVIDED" name="web-console (v4.0.1, RVM: ruby-2.5.1 [photo-contest]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="webdrivers (v4.3.0, RVM: ruby-2.5.1 [photo-contest]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="webpacker (v4.2.2, RVM: ruby-2.5.1 [photo-contest]) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="websocket-driver (v0.7.1, RVM: ruby-2.5.1 [photo-contest]) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="websocket-extensions (v0.1.4, RVM: ruby-2.5.1 [photo-contest]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="websocket-driver (v0.7.2, RVM: ruby-2.5.1 [photo-contest]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="websocket-extensions (v0.1.5, RVM: ruby-2.5.1 [photo-contest]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="will_paginate (v3.3.0, RVM: ruby-2.5.1 [photo-contest]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="xpath (v3.2.0, RVM: ruby-2.5.1 [photo-contest]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="zeitwerk (v2.3.0, RVM: ruby-2.5.1 [photo-contest]) [gem]" level="application" />
