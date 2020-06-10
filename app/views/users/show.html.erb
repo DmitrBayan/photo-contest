@@ -3,17 +3,15 @@
     <aside class="col-md-4">
       <section>
         <h1>
-          <img src=<%= @user.image_url %>/>
+          <img src=<%= @user.image_url %> alt="User"/>
           <%= @user.first_name %>
           <%= @user.last_name %>
           <h3><a href="<%= @user.url %>">Social</a></h3>
         </h1>
       </section>
-      <% if @user&.id == current_user&.id %>
         <section class="post_form">
           <%= render 'shared/post_form' %>
         </section>
-      <% end %>
     </aside>
     <div class="col-md-8">
       <% if @user.posts.any? %>

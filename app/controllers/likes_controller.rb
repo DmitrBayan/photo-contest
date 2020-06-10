@@ -7,8 +7,10 @@ class LikesController < ApplicationController
   def create
     if already_liked?
       @like.destroy
+      flash[:success] = 'Unliked!'
     else
       @post.likes.create(user_id: current_user.id)
+      flash[:success] = 'Liked!'
     end
     redirect_to request.referrer || root_path
   end

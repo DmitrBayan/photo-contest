@@ -5,14 +5,9 @@ class CommentsController < ApplicationController
   before_action :correct_user, only: :destroy
   before_action :find_commentable, only: :create
 
-  def new
-    @comment = Comment.new
-  end
-
   def create
     @comment = @commentable.comments.build(comment_params)
     @comment.user_id = current_user.id
-    byebug
     if @comment.save
       flash[:success] = 'Commented!'
       redirect_to request.referrer
@@ -32,7 +27,7 @@ class CommentsController < ApplicationController
 
   def correct_user
     @comment = current_user.posts.comments.find(params[:id])
-    redirect_to root_path if @comment.nil?
+    redirect_to root_path if @comment.blank?
     flash[:warning] = 'It is not your comment'
   end
 
@@ -43,6 +38,5 @@ class CommentsController < ApplicationController
   def find_commentable
     @commentable = Comment.find(params[:format]) if params[:format]
     @commentable = Post.find(params[:post_id]) if params[:post_id]
-    byebug
   end
 end

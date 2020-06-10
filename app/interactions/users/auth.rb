@@ -18,6 +18,8 @@ module Users
         user.first_name, user.last_name = auth_hash['info']['name'].split(' ')
         user.image_url = auth_hash['info']['image']
         user.access_token = auth_hash['credentials']['token']
+      else
+        user.errors.add('Unknown provider')
       end
       user.save ? user : user.errors
     end

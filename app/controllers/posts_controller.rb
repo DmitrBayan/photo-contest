@@ -5,11 +5,12 @@ class PostsController < ApplicationController
   before_action :correct_user, only: :destroy
 
   def index
-    @posts = Post.all
+    @posts = Post.page(params[:page]).approved.reorder(params[:sorting])
+    @posts = Post.page(params[:page]).approved unless params[:sorting].present?
   end
 
   def show
-    @post = Post.find(params[:post_id])
+    @post = Post.find_by(id: params[:post_id])
   end
 
   def create
@@ -29,10 +30,6 @@ class PostsController < ApplicationController
     redirect_to request.referrer || current_user
   end
 
-  def edit
-
-  end
-
   private
 
   def post_params
@@ -41,6 +38,6 @@ class PostsController < ApplicationController
 
   def correct_user
     @post = current_user.posts.find(params[:id])
-    redirect_to root_path if @post.nil?
+    redirect_to root_path if @post.blank?
   end
 end

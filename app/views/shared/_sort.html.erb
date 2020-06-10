@@ -1,0 +1,8 @@
+
+  <div class="dropdown">
+    <button class="dropbtn">Sort</button>
+    <div class="dropdown-content">
+      <%= link_to 'Date ▼', posts_path(sorting: 'created_at ASC') %>
+      <%= link_to 'Date ▲', posts_path(sorting: 'created_at DESC') %>
+    </div>
+  </div>

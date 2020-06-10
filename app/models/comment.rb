@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # == Schema Information
 #
 # Table name: comments
@@ -24,8 +26,8 @@
 class Comment < ApplicationRecord
   belongs_to :user
   belongs_to :commentable, polymorphic: true
-  validates :body, presence: true
-  validates :user_id, presence: true
-  has_many :comments, as: :commentable, dependent: :destroy
 
+  validates :body, presence: true
+
+  has_many :comments, as: :commentable, dependent: :destroy
 end

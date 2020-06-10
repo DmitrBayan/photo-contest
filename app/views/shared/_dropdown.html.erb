@@ -1,0 +1,9 @@
+<div class="dropdown">
+  <button class="dropbtn">More</button>
+  <div class="dropdown-content">
+    <div class="delete_post">
+      <%= link_to "Delete photo", post, method: :delete,
+                  data: { confirm: "You sure?" } %>
+    </div>
+  </div>
+</div>

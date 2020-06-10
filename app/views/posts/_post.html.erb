@@ -6,24 +6,16 @@
   </span>
   <%= render 'shared/likes', post: post %>
   <% if current_user?(post.user) %>
-      <div class="dropdown">
-        <button class="dropbtn">More</button>
-        <div class="dropdown-content">
-          <div class="delete_post">
-            <%= link_to "Delete photo", post, method: :delete,
-                                        data: { confirm: "You sure?" } %>
-          </div>
-          <div class="edit_post">
-            <%= link_to "Edit photo", post, method: :edit %>
-          </div>
-        </div>
-      </div>
+      <%= render 'shared/dropdown', post: post %>
+  <% end %>
+  <% if current_user.admin? %>
+    <%= link_to "Publish", post, post.a_post %>
   <% end %>
   <div class="timestamp">
     Posted <%= time_ago_in_words(post.created_at) %> ago.
   </div>
     <ul>
-    <%= render 'shared/comment_form', post: post %>
-    <%= render(partial: 'comments/comment', collection: post.comments) %>
+      <%= render 'shared/comment_form', post: post %>
+      <%= render(partial: 'comments/comment', collection: post.comments) %>
     </ul>
 </li>

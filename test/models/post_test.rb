@@ -1,8 +1,11 @@
+# frozen_string_literal: true
+
 # == Schema Information
 #
 # Table name: posts
 #
 #  id         :bigint           not null, primary key
+#  aasm_state :string
 #  photo      :string
 #  title      :text
 #  created_at :datetime         not null

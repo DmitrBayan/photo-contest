@@ -1,9 +1,12 @@
+# frozen_string_literal: true
+
 # == Schema Information
 #
 # Table name: users
 #
 #  id           :bigint           not null, primary key
 #  access_token :string           not null
+#  admin        :boolean          default(FALSE)
 #  first_name   :string
 #  image_url    :string
 #  last_name    :string
