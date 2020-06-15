@@ -32,6 +32,9 @@ class Post < ApplicationRecord
   validates :photo, presence: true
   validate :photo_size
 
+  default_scope -> { order(created_at: :desc) }
+
+
   include AASM
   aasm do
     state :moderated, initial: true

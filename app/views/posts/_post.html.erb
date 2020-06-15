@@ -8,9 +8,6 @@
   <% if current_user?(post.user) %>
       <%= render 'shared/dropdown', post: post %>
   <% end %>
-  <% if current_user.admin? %>
-    <%= link_to "Publish", post, post.a_post %>
-  <% end %>
   <div class="timestamp">
     Posted <%= time_ago_in_words(post.created_at) %> ago.
   </div>

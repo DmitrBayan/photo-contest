@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 Rails.application.routes.draw do
+  ActiveAdmin.routes(self)
   root 'static_pages#home'
   delete 'logout' => 'session#destroy'
   get '/auth/:provider/callback' => 'session#create'

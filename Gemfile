@@ -48,12 +48,16 @@ gem 'fog-aws', '3.6.5'
 gem 'fog-core'
 gem 'pg'
 gem 'aasm'
+gem 'activeadmin'
+gem 'i18n'
 # rubocop
 gem 'rubocop', require: false
 
 # bootstrap-sprockets
-gem 'bootstrap-sass',             '3.4.1'
-gem 'bootstrap-will_paginate',    '1.0.0'
+gem 'bootstrap-sass'
+gem 'bootstrap-will_paginate'
+
+gem 'will_paginate'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

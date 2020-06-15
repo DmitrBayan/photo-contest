@@ -5,7 +5,7 @@
       <% if logged? %>
       <ul class="nav navbar-nav navbar-right">
         <% if current_user.admin? %>
-          <li><a>You can moderate posts</a></li>
+          <li><%= link_to "Admin panel", admin_posts_path %></li>
         <% end %>
         <li><%= link_to "My profile", current_user %></li>
         <li><%= link_to "Log out", logout_path, method: :delete %></li>
