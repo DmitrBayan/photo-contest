@@ -27,7 +27,7 @@ class ApplicationController < ActionController::Base
   end
 
   def render_500(error)
-    @error = exception
+    @error = exception.message
     respond_to do |format|
       format.html { render template: 'errors/error_500', status: 500 }
       format.all { render nothing: true, status: 500}

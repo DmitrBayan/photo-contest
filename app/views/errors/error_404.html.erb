@@ -1,0 +1,10 @@
+<h1> 404 </h1>
+<div>
+  <h2> We're sorry </h2>
+  <p> The content that you requested could not be found.
+    <br>
+      You tried to access <%=("'/#{@not_found_path}'")%>, which is not a valid page.
+    <br>
+      Want to
+    <%= link_to "back to home", root_path %> and try again? </p>
+</div>
