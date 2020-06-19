@@ -39,8 +39,7 @@ gem 'carrierwave', '~> 2.0'
 # pagination
 gem 'kaminari'
 
-# for heroku
-gem 'msgpack', '1.3.1'
+
 # active interaction
 gem 'active_interaction', '~> 3.7'
 
