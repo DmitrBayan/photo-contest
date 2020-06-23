@@ -1,24 +1,26 @@
-<p id="notice"><%= notice %></p>
+<% provide(:title, @user.first_name + " " + @user.last_name) %>
+<div class="row">
+    <aside class="col-md-4">
+      <section>
+        <h1>
+          <img src=<%= @user.image_url %> alt="User"/>
+          <%= @user.first_name %>
+          <%= @user.last_name %>
+          <h3><a href="<%= @user.url %>">Social</a></h3>
+        </h1>
+      </section>
+        <section class="post_form">
+          <%= render 'shared/post_form' %>
+        </section>
+    </aside>
+    <div class="col-md-8">
+      <% if @user.posts.any? %>
+        <h3>Posts (<%= @user.posts.approved.count %>)</h3>
+        <ol class="posts">
+          <%= render @posts %>
+        </ol>
+        <%= will_paginate @posts %>
+      <% end %>
+    </div>
 
-<p>
-  <strong>Username:</strong>
-  <%= @user.username %>
-</p>
-
-<p>
-  <strong>Nickname:</strong>
-  <%= @user.nickname %>
-</p>
-
-<p>
-  <strong>Provider:</strong>
-  <%= @user.provider %>
-</p>
-
-<p>
-  <strong>Url:</strong>
-  <%= @user.url %>
-</p>
-
-<%= link_to 'Edit', edit_user_path(@user) %> |
-<%= link_to 'Back', users_path %>
+  </div>

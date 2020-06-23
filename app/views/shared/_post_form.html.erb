@@ -1,0 +1,18 @@
+<%= form_for :post, url: posts_path, html: { multipart: true } do |f| %>
+  <div class="field">
+    <%= f.text_area :title, placeholder: "...photo title..." %>
+  </div>
+  <%= f.submit "Post", class: "btn btn-primary" %>
+  <span class="photo">
+    <%= f.file_field :photo, accept: 'image/jpg,image/gif,image/png,image/jpeg' %>
+  </span>
+<% end %>
+
+<script type="text/javascript">
+    $('#post_photo').bind('change', function() {
+        var size_in_megabytes = this.files[0].size/1024/1024;
+        if (size_in_megabytes > 5) {
+            alert('Maximum file size is 5MB. Please choose a smaller file.');
+        }
+    });
+</script>

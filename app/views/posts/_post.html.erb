@@ -1,0 +1,18 @@
+<li id="post-<%= post.id %>">
+  <span class="user"><%= link_to post.user.first_name, post.user %></span>
+  <span class="content">
+    <%= post.title %>
+    <%= image_tag(post.photo.url, alt: 'Image') if post.photo?%>
+  </span>
+  <%= render 'shared/likes', post: post %>
+  <% if current_user?(post.user) %>
+      <%= render 'shared/dropdown', post: post %>
+  <% end %>
+  <div class="timestamp">
+    Posted <%= time_ago_in_words(post.created_at) %> ago.
+  </div>
+    <ul>
+      <%= render 'shared/comment_form', post: post %>
+      <%= render(partial: 'comments/comment', collection: post.comments) %>
+    </ul>
+</li>

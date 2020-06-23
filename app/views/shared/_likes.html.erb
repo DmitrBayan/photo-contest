@@ -1,0 +1,5 @@
+<% if logged? %>
+  <p><%= post.likes.count %> <%= (post.likes.count) == 1 ? 'Like' : 'Likes'%></p>
+  <%= button_to 'Like', post_likes_path(post), method: :post %>
+<% end %>
+

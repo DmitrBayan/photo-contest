@@ -1,0 +1,29 @@
+<% provide(:title, "Home page") %>
+<h1> Welcome to home page of "PhotoContest"! </h1>
+<div class = "row">
+<%if logged?%>
+    <aside class="col-md-4">
+      <section class="user_info">
+        <%= render 'shared/current_user', user: @user %>
+      </section>
+      <section class="post_form">
+        <%= render 'shared/post_form' %>
+      </section>
+    </aside>
+<% else %>
+  <h4>To auth, please click your preferable social network:</h4>
+    <div class="center">
+  <%= link_to "Facebook", 'auth/facebook', class: "btn btn-lg btn-primary" %>
+  <%= link_to "VKontakte", 'auth/vkontakte', class: "btn btn-lg btn-primary" %>
+    </div>
+<% end %>
+<div class="col-md-8">
+  <% if @posts.any? %>
+    <h3>Posts (<%= @posts.count %>)</h3>
+    <ol class="posts">
+      <%= render @posts %>
+    </ol>
+    <%= will_paginate @posts %>
+  <% end %>
+</div>
+</div>
